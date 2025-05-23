@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1358931088}
-  m_IndirectSpecularColor: {r: 0.24925852, g: 0.45387673, b: 0.63311994, a: 1}
+  m_IndirectSpecularColor: {r: 0.45061147, g: 0.7439684, b: 0.99301773, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -36388,13 +36388,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9845032, z: -0.17536667, w: 0}
+  m_LocalRotation: {x: -0, y: -0.953717, z: -0.30070576, w: 0}
   m_LocalPosition: {x: 0, y: 1.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1726641273}
-  m_LocalEulerAnglesHint: {x: -20.2, y: -180, z: 0}
+  m_LocalEulerAnglesHint: {x: -35, y: -180, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70140,6 +70140,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1904006618}
+  - component: {fileID: 1904006621}
   - component: {fileID: 1904006619}
   - component: {fileID: 1904006620}
   m_Layer: 0
@@ -70148,7 +70149,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1904006618
 Transform:
   m_ObjectHideFlags: 0
@@ -70185,7 +70186,7 @@ MonoBehaviour:
   rotacionFinalX: 0
   portalEscalaFinalX: 1
   pitchInicial: 0.15
-  pitchFinal: 10
+  pitchFinal: 5
   sunSizeFinal: 0.04
   atmosphereThicknessFinal: 5
   exposureFinal: 10
@@ -70197,13 +70198,29 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904006617}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5c1c5f71b7be13c40955aaef4599240e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Inicio
   holdTimeToQuit: 2
+--- !u!114 &1904006621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904006617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb9c8465b356ded408aaee4000f1ead6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skyboxMaterial: {fileID: 2100000, guid: 15e06afadb45b7f4fbeebe6417a7ca20, type: 2}
+  sunSize: 0.13
+  atmosphereThickness: 0.4
+  exposure: 2
 --- !u!1 &1979931165
 GameObject:
   m_ObjectHideFlags: 0
